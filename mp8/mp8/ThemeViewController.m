@@ -17,7 +17,7 @@
 @synthesize themes;
 @synthesize iv;
 @synthesize sv;
-@synthesize pageControl;
+@synthesize apageControl;
 
 
 
@@ -73,7 +73,7 @@
     //update the page control to match the current scroll
     CGPoint offset = aScrollView.contentOffset;
     float width = self.view.frame.size.width;
-    pageControl.currentPage = offset.x / width;
+    apageControl.currentPage = offset.x / width;
 }
 
 -(void)loadView
@@ -81,7 +81,7 @@
     [super loadView];
     
     float width = self.view.frame.size.width;
-    float height = self.view.frame.size.height;
+    float height = self.view.frame.size.height - 48;
     
     //create the scroll view and set its content size and delegate
     sv = [[UIScrollView alloc] initWithFrame:
@@ -108,10 +108,11 @@
     [self.view addSubview:sv];
     
     //update the page control attributes and add a target
-    pageControl.numberOfPages = 3;
-    pageControl.currentPage = 0;
-    [pageControl addTarget:self action:@selector(pageTurn:)
+    apageControl.numberOfPages = 3;
+    apageControl.currentPage = 0;
+    [apageControl addTarget:self action:@selector(pageTurn:)
           forControlEvents:UIControlEventValueChanged];
+
 }
 
 - (NSString *)copyDatabaseToDocuments {
@@ -221,10 +222,11 @@
 
 - (void)viewDidUnload
 {
-    pageControl = nil;
-    pageControl = nil;
+    apageControl = nil;
+    apageControl = nil;
     sv = nil;
     iv = nil;
+    aPageControl = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

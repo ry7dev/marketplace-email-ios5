@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2541" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1875"/>
     </dependencies>
     <scenes>
@@ -13,16 +12,12 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="UUy-C6-qON">
-                                <rect key="frame" x="103" y="379" width="114" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YHz-ig-ct8">
-                                <rect key="frame" x="0.0" y="-3" width="325" height="416"/>
+                                <rect key="frame" x="0.0" y="-3" width="325" height="415"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="WUq-8C-gs1">
-                                <rect key="frame" x="0.0" y="-2" width="328" height="416"/>
+                                <rect key="frame" x="0.0" y="-2" width="328" height="415"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -31,7 +26,6 @@
                     <tabBarItem key="tabBarItem" title="Themes" image="themesIcon.png" id="7"/>
                     <connections>
                         <outlet property="iv" destination="WUq-8C-gs1" id="Kbo-an-BbZ"/>
-                        <outlet property="pageControl" destination="UUy-C6-qON" id="KSR-Bu-Pq2"/>
                         <outlet property="sv" destination="YHz-ig-ct8" id="0nu-fu-iAe"/>
                     </connections>
                 </viewController>
@@ -48,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.24144003326006203" green="0.89107523666629118" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Campaign Manager" image="CampaignIcon.png" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Document Manager" image="CampaignIcon.png" id="6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +80,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ThemeViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="iv" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
                 <relationship kind="outlet" name="sv" candidateClass="UIScrollView"/>
             </relationships>
         </class>
