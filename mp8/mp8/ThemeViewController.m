@@ -15,6 +15,9 @@
 
 @implementation ThemeViewController
 @synthesize themes;
+@synthesize iv;
+@synthesize sv;
+@synthesize pageControl;
 
 
 
@@ -45,7 +48,7 @@
     
     
 
-    
+
     [self.view setUserInteractionEnabled:YES];
     [self.view setMultipleTouchEnabled:YES];
     
@@ -54,6 +57,60 @@
 	
 }
 
+-(void) pageTurn: (UIPageControl *) aPageControl
+{
+    //animate to the new page
+    float width = self.view.frame.size.width;
+    int whichPage = aPageControl.currentPage;
+    [UIView animateWithDuration:0.3f
+                     animations:^{sv.contentOffset =
+                         CGPointMake(width * whichPage, 0.0f);}];
+}
+
+
+-(void) scrollViewDidScroll: (UIScrollView *)aScrollView
+{
+    //update the page control to match the current scroll
+    CGPoint offset = aScrollView.contentOffset;
+    float width = self.view.frame.size.width;
+    pageControl.currentPage = offset.x / width;
+}
+
+-(void)loadView
+{
+    [super loadView];
+    
+    float width = self.view.frame.size.width;
+    
+    //create the scroll view and set its content size and delegate
+    sv = [[UIScrollView alloc] initWithFrame:
+          CGRectMake(0.0f, 0.0f,width,width)];
+    
+    sv.contentSize = CGSizeMake(3 * width, sv.frame.size.height);
+    sv.pagingEnabled = YES;
+    sv.delegate = self;
+    
+    //load in all the pages
+    for(int i = 0;i < 3; i++)
+    {
+        NSString *filename =
+        [NSString stringWithFormat:@"image%d.png",i+1];
+        UIImageView *iv = [[UIImageView alloc] initWithImage:
+                           [UIImage imageNamed:filename]];
+        iv.frame = CGRectMake(i * width, 0.0f, width, width);
+        [sv addSubview:iv];
+        
+        
+    }
+    //place the scroll view on the screen
+    [self.view addSubview:sv];
+    
+    //update the page control attributes and add a target
+    pageControl.numberOfPages = 3;
+    pageControl.currentPage = 0;
+    [pageControl addTarget:self action:@selector(pageTurn:)
+          forControlEvents:UIControlEventValueChanged];
+}
 
 - (NSString *)copyDatabaseToDocuments {
 	NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -107,12 +164,12 @@
                 //NSLog(@"theme image is:: %@",themePicture);
 
                 NSString *str = [[NSBundle mainBundle] pathForResource:themePicture ofType:nil inDirectory:@""];
-                UIScrollView *scrollView = [[UIScrollView alloc]
-                                            initWithFrame:CGRectMake(10,10,self.view.frame.size.width,self.view.frame.size.height)];
+                /*UIScrollView *scrollView = [[UIScrollView alloc]
+                                            initWithFrame:CGRectMake(10,10,self.view.frame.size.width,self.view.frame.size.height)];*/
                 
                 
                 //scrollable content size...
-                scrollView.contentSize = CGSizeMake(self.view.frame.size.width - 35,
+                /*scrollView.contentSize = CGSizeMake(self.view.frame.size.width - 35,
                                                     self.view.frame.size.height + 360);
                 [scrollView flashScrollIndicators];
                 
@@ -137,7 +194,7 @@
                 [scrollView addSubview:singleImageView];
                 [scrollView addSubview:awsmView];
                 scrollView.minimumZoomScale=0.5;
-                scrollView.maximumZoomScale=6.0;
+                scrollView.maximumZoomScale=6.0;*/
 
                 NSLog(@"theme image is:: %@",str);
                 
@@ -146,7 +203,7 @@
 
 
                 [self.themes addObject:newTheme];
-                [self.view addSubview:scrollView];
+                //[self.view addSubview:scrollView];
 
 
                 
@@ -162,6 +219,10 @@
 
 - (void)viewDidUnload
 {
+    pageControl = nil;
+    pageControl = nil;
+    sv = nil;
+    iv = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

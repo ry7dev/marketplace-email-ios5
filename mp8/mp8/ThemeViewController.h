@@ -11,10 +11,19 @@
 @interface ThemeViewController : UIViewController <UIScrollViewDelegate> {
     NSMutableArray *themes;
 
+    IBOutlet UIImageView *iv;
+
+    IBOutlet UIScrollView *sv;
+    IBOutlet UIPageControl *pageControl;
+
+
 
 }
 
 @property (nonatomic, retain) NSMutableArray *themes;
+@property (nonatomic, retain) UIScrollView *sv;
+@property (nonatomic, retain) UIPageControl *pageControl;
+@property (nonatomic, retain) UIImageView *iv;
 
 -(NSString *)copyDatabaseToDocuments;
 
