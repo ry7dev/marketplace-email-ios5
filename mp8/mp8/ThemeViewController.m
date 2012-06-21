@@ -81,10 +81,11 @@
     [super loadView];
     
     float width = self.view.frame.size.width;
+    float height = self.view.frame.size.height;
     
     //create the scroll view and set its content size and delegate
     sv = [[UIScrollView alloc] initWithFrame:
-          CGRectMake(0.0f, 0.0f,width,width)];
+          CGRectMake(0.0f, 0.0f,width,height)];
     
     sv.contentSize = CGSizeMake(3 * width, sv.frame.size.height);
     sv.pagingEnabled = YES;
@@ -94,11 +95,12 @@
     for(int i = 0;i < 3; i++)
     {
         NSString *filename =
-        [NSString stringWithFormat:@"image%d.png",i+1];
-        UIImageView *iv = [[UIImageView alloc] initWithImage:
+        [NSString stringWithFormat:@"%d.jpg",i+1];
+        UIImageView *ivs = [[UIImageView alloc] initWithImage:
                            [UIImage imageNamed:filename]];
-        iv.frame = CGRectMake(i * width, 0.0f, width, width);
-        [sv addSubview:iv];
+        NSLog(@"image is %@",filename);
+        ivs.frame = CGRectMake(i * width, 0.0f, width, height);
+        [sv addSubview:ivs];
         
         
     }
