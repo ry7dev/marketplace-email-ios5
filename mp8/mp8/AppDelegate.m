@@ -22,6 +22,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    
     //change the status bar style---------------------------------------------------[R7]
     [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 

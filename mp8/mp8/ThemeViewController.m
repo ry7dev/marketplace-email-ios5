@@ -53,15 +53,13 @@
     [self.view setMultipleTouchEnabled:YES];
     
 
-
-	
 }
 
--(void) pageTurn: (UIPageControl *) aPageControl
+-(void) pageTurn: (UIPageControl *) tPageControl
 {
     //animate to the new page
     float width = self.view.frame.size.width;
-    int whichPage = aPageControl.currentPage;
+    int whichPage = tPageControl.currentPage;
     [UIView animateWithDuration:0.3f
                      animations:^{sv.contentOffset =
                          CGPointMake(width * whichPage, 0.0f);}];
