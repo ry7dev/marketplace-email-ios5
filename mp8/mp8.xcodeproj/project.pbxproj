@@ -36,6 +36,7 @@
 		929C19C9154A57C60049BDCD /* CampaignIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C19C7154A57C60049BDCD /* CampaignIcon@2x.png */; };
 		929C19CB154A57EE0049BDCD /* themesIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 929C19CA154A57EE0049BDCD /* themesIcon@2x.png */; };
 		92B8F553154E5158001871A0 /* tmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 92B8F552154E5158001871A0 /* tmp.png */; };
+		92F6CE3A15983E28003D4DD8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92F6CE3915983E28003D4DD8 /* Settings.bundle */; };
 		9B8BCD1D1593D1B9006FE653 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B8BCD1A1593D1B9006FE653 /* 1.jpg */; };
 		9B8BCD1E1593D1B9006FE653 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B8BCD1B1593D1B9006FE653 /* 2.jpg */; };
 		9B8BCD1F1593D1B9006FE653 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B8BCD1C1593D1B9006FE653 /* 3.jpg */; };
@@ -57,7 +58,7 @@
 		921DB5F91544C94500ED0B4F /* ThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
 		921DB5FB1544C94500ED0B4F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		921DB5FD1544C94500ED0B4F /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		921DB5FF1544C94500ED0B4F /* DocManagerViewController.h */ = {isa = PBXFileReference; path = DocManagerViewController.h; sourceTree = "<group>"; };
+		921DB5FF1544C94500ED0B4F /* DocManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocManagerViewController.h; sourceTree = "<group>"; };
 		921DB6001544C94500ED0B4F /* DocManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocManagerViewController.m; sourceTree = "<group>"; };
 		921DB6021544C94500ED0B4F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		921DB6041544C94500ED0B4F /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		929C19C7154A57C60049BDCD /* CampaignIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CampaignIcon@2x.png"; sourceTree = "<group>"; };
 		929C19CA154A57EE0049BDCD /* themesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "themesIcon@2x.png"; sourceTree = "<group>"; };
 		92B8F552154E5158001871A0 /* tmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmp.png; sourceTree = "<group>"; };
+		92F6CE3915983E28003D4DD8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		9B8BCD1A1593D1B9006FE653 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		9B8BCD1B1593D1B9006FE653 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		9B8BCD1C1593D1B9006FE653 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				921DB5F81544C94500ED0B4F /* ThemeViewController.h */,
 				921DB5F91544C94500ED0B4F /* ThemeViewController.m */,
 				923460581598374C00047294 /* mp8.xcdatamodeld */,
+				92F6CE3915983E28003D4DD8 /* Settings.bundle */,
 				924470D51556550C005B9A75 /* Theme.h */,
 				924470D61556550C005B9A75 /* Theme.m */,
 				9234605C159839D600047294 /* docManager.plist */,
@@ -247,6 +250,7 @@
 				9B8BCD1E1593D1B9006FE653 /* 2.jpg in Resources */,
 				9B8BCD1F1593D1B9006FE653 /* 3.jpg in Resources */,
 				9234605D159839D600047294 /* docManager.plist in Resources */,
+				92F6CE3A15983E28003D4DD8 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
