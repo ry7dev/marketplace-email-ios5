@@ -112,6 +112,8 @@
           forControlEvents:UIControlEventValueChanged];
 
 }
+#pragma mark - [R7 database to documents dir..]
+
 
 - (NSString *)copyDatabaseToDocuments {
 	NSFileManager *fileManager = [NSFileManager defaultManager];

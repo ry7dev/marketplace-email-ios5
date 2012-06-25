@@ -17,11 +17,13 @@
 		921DB5FA1544C94500ED0B4F /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921DB5F91544C94500ED0B4F /* ThemeViewController.m */; };
 		921DB5FC1544C94500ED0B4F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 921DB5FB1544C94500ED0B4F /* first.png */; };
 		921DB5FE1544C94500ED0B4F /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 921DB5FD1544C94500ED0B4F /* first@2x.png */; };
-		921DB6011544C94500ED0B4F /* CampaignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921DB6001544C94500ED0B4F /* CampaignViewController.m */; };
+		921DB6011544C94500ED0B4F /* DocManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921DB6001544C94500ED0B4F /* DocManagerViewController.m */; };
 		921DB6031544C94500ED0B4F /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 921DB6021544C94500ED0B4F /* second.png */; };
 		921DB6051544C94500ED0B4F /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 921DB6041544C94500ED0B4F /* second@2x.png */; };
 		921DB60C15465F6600ED0B4F /* MPIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 921DB60B15465F6600ED0B4F /* MPIcon.png */; };
 		921DB60E15465F6F00ED0B4F /* MPIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 921DB60D15465F6F00ED0B4F /* MPIcon@2x.png */; };
+		9234605A1598374C00047294 /* mp8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 923460581598374C00047294 /* mp8.xcdatamodeld */; };
+		9234605D159839D600047294 /* docManager.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9234605C159839D600047294 /* docManager.plist */; };
 		924470D215564CA5005B9A75 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 924470D115564CA5005B9A75 /* libsqlite3.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		924470D415564CAE005B9A75 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 924470D315564CAE005B9A75 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		924470D71556550C005B9A75 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 924470D61556550C005B9A75 /* Theme.m */; };
@@ -55,12 +57,14 @@
 		921DB5F91544C94500ED0B4F /* ThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
 		921DB5FB1544C94500ED0B4F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		921DB5FD1544C94500ED0B4F /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		921DB5FF1544C94500ED0B4F /* CampaignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CampaignViewController.h; sourceTree = "<group>"; };
-		921DB6001544C94500ED0B4F /* CampaignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CampaignViewController.m; sourceTree = "<group>"; };
+		921DB5FF1544C94500ED0B4F /* DocManagerViewController.h */ = {isa = PBXFileReference; path = DocManagerViewController.h; sourceTree = "<group>"; };
+		921DB6001544C94500ED0B4F /* DocManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocManagerViewController.m; sourceTree = "<group>"; };
 		921DB6021544C94500ED0B4F /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		921DB6041544C94500ED0B4F /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		921DB60B15465F6600ED0B4F /* MPIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPIcon.png; sourceTree = "<group>"; };
 		921DB60D15465F6F00ED0B4F /* MPIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPIcon@2x.png"; sourceTree = "<group>"; };
+		923460591598374C00047294 /* mp8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mp8.xcdatamodel; sourceTree = "<group>"; };
+		9234605C159839D600047294 /* docManager.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = docManager.plist; sourceTree = "<group>"; };
 		924470D115564CA5005B9A75 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		924470D315564CAE005B9A75 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		924470D51556550C005B9A75 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
@@ -132,13 +136,15 @@
 				921DB5F51544C94500ED0B4F /* MPEmail.storyboard */,
 				921DB5F81544C94500ED0B4F /* ThemeViewController.h */,
 				921DB5F91544C94500ED0B4F /* ThemeViewController.m */,
+				923460581598374C00047294 /* mp8.xcdatamodeld */,
 				924470D51556550C005B9A75 /* Theme.h */,
 				924470D61556550C005B9A75 /* Theme.m */,
+				9234605C159839D600047294 /* docManager.plist */,
 				921DB5FB1544C94500ED0B4F /* first.png */,
 				924470DA155661BD005B9A75 /* 1.jpg */,
 				921DB5FD1544C94500ED0B4F /* first@2x.png */,
 				924470DC15567084005B9A75 /* 2.jpg */,
-				921DB5FF1544C94500ED0B4F /* CampaignViewController.h */,
+				921DB5FF1544C94500ED0B4F /* DocManagerViewController.h */,
 				9B8BCD1A1593D1B9006FE653 /* 1.jpg */,
 				9B8BCD1B1593D1B9006FE653 /* 2.jpg */,
 				9B8BCD1C1593D1B9006FE653 /* 3.jpg */,
@@ -146,7 +152,7 @@
 				929C19CA154A57EE0049BDCD /* themesIcon@2x.png */,
 				924470DE155670CB005B9A75 /* mpe.sqlite */,
 				92B8F552154E5158001871A0 /* tmp.png */,
-				921DB6001544C94500ED0B4F /* CampaignViewController.m */,
+				921DB6001544C94500ED0B4F /* DocManagerViewController.m */,
 				929C19C6154A57C60049BDCD /* CampaignIcon.png */,
 				929C19C7154A57C60049BDCD /* CampaignIcon@2x.png */,
 				921DB6021544C94500ED0B4F /* second.png */,
@@ -240,6 +246,7 @@
 				9B8BCD1D1593D1B9006FE653 /* 1.jpg in Resources */,
 				9B8BCD1E1593D1B9006FE653 /* 2.jpg in Resources */,
 				9B8BCD1F1593D1B9006FE653 /* 3.jpg in Resources */,
+				9234605D159839D600047294 /* docManager.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +260,9 @@
 				921DB5F01544C94500ED0B4F /* main.m in Sources */,
 				921DB5F41544C94500ED0B4F /* AppDelegate.m in Sources */,
 				921DB5FA1544C94500ED0B4F /* ThemeViewController.m in Sources */,
-				921DB6011544C94500ED0B4F /* CampaignViewController.m in Sources */,
+				921DB6011544C94500ED0B4F /* DocManagerViewController.m in Sources */,
 				924470D71556550C005B9A75 /* Theme.m in Sources */,
+				9234605A1598374C00047294 /* mp8.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +379,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		923460581598374C00047294 /* mp8.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				923460591598374C00047294 /* mp8.xcdatamodel */,
+			);
+			currentVersion = 923460591598374C00047294 /* mp8.xcdatamodel */;
+			path = mp8.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 921DB5D61544C94400ED0B4F /* Project object */;
 }
